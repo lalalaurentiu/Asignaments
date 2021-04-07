@@ -198,5 +198,4 @@ class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
 if __name__=='__main__':
     print('Starting httpd on port {}'.format(PORT))
     server = ThreadedHTTPServer((HOST,PORT), RequestHandler)
-    # server.socket = ssl.wrap_socket (server.socket, certfile='EF9626EFE453E73AF76B6BE75DADA64F.txt', server_side=True)
     server.serve_forever()
